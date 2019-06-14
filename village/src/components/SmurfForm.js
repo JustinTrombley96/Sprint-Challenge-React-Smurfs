@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 class SmurfForm extends Component {
@@ -12,9 +11,8 @@ class SmurfForm extends Component {
 		};
 	}
 
-	addSmurf = (event, smurf) => {
+	addSmurf = event => {
 		event.preventDefault();
-		axios;
 		this.props.addSmurf(this.state);
 
 		this.setState({
